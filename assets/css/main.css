@@ -5,11 +5,11 @@ body {
    font-weight: 300;
    line-height: 1.5;
    color: #555;
-  padding-top: 5rem;
+  background: #f9f9fb;
 }
 
 .page-header {
-  padding: 10rem 1.5rem;
+  padding: 15rem 1.5rem 10rem;
   position: relative;
 }
 
@@ -34,13 +34,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-   background: #008bc4;
+   background: rgba(0, 139, 196, 0.9);
 }
 
 .btn {
-   border-radius: 0;
+   border-radius: 2px;
+   padding: .5rem 2rem;
    text-transform: uppercase;
    background: #008bc4;
+   letter-spacing: 1px;
    color: #fff;
    font-weight: 300;
    opacity: 1;
@@ -66,6 +68,19 @@ h1, h2, h3, h4, h5, h6 {
    max-width: 100%;
 }
 
+.card-form {
+   max-width: 500px;
+   margin: 0 auto;
+}
+.input-group-prepend .input-group-text {
+   border-color: transparent;
+   background-color: #c6c6c6;
+   color: #04465f;
+}
+.form-control {
+   background: #f0f0f0;
+   border-color: transparent;
+}
 
 footer {
    background: #4c4c4c;
