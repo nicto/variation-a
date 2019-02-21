@@ -5,6 +5,7 @@ body {
    font-weight: 300;
    line-height: 1.5;
    color: #555;
+   font-size: 18px;
   background: #f9f9fb;
 }
 
@@ -53,6 +54,14 @@ h1, h2, h3, h4, h5, h6 {
    background: #008bc4;
 }
 
+h1 {
+   font-size: 50px;
+}
+
+h2 span {
+   color: #008bc4;
+}
+
 .screen-capture {
    overflow-y: hidden;
    max-height: 400px;
@@ -63,9 +72,41 @@ h1, h2, h3, h4, h5, h6 {
    color: #fff;
 }
 
+@media (min-width: 990px) {
+   .section-sub-text {
+      margin-top: 8rem;
+   }
+}
+
 .section-sub .mockup img {
    padding: 1rem 5rem 5rem;
    max-width: 100%;
+}
+.home-cta {
+   background: url(../images/sign-up-cta.jpeg)  center / cover no-repeat;
+   position: relative;
+   padding: 5rem 1rem 7rem;
+}
+
+.home-cta .container-fluid {
+   position: relative;
+}
+
+.home-cta h2,
+.home-cta p {
+   color: #fff;
+}
+
+.home-cta:before {
+   content: '';
+   position: absolute;
+   background: rgba(0, 139, 196, 0.65);
+   display: block;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 .card-form {
@@ -85,4 +126,19 @@ h1, h2, h3, h4, h5, h6 {
 footer {
    background: #4c4c4c;
    color: #fff;
+}
+
+footer a {
+   color: #39BAF3;
+   opacity: 1;
+}
+
+footer a:hover {
+   color: #39BAF3;
+   opacity: .8;
+   text-decoration: none;
+}
+
+.footer-bottom {
+   background: #333;
 }

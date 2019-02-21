@@ -17,6 +17,25 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/main.css">
+<!-- Facebook Pixel Code -->
+<script>
+   !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+         n.callMethod ?
+         n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+   }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '241878423427584');
+   fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=241878423427584&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -27,28 +46,6 @@
          <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-         <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">Dropdown</a>
-               <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-               </div>
-            </li>
-         </ul> -->
-      </div>
    </nav>
 
 <section class="page-header" style="background: url(assets/images/header-bg.jpg) center / cover no-repeat;">
@@ -56,17 +53,36 @@
       <div class="row">
          <div class="col-8">
             <h1>Clean Up Your Twitter History</h1>
-            <h2SafeSocial Can Help></h2>
+            <h2><span>SafeSocial</span> Can Help</h2>
             <p class="lead">
                Everyone has something on their Twitter account that shouldn’t be there. Use the Social Risk Report by SafeSocial to see
                what needs to be cleaned up in your Twitter history.
             </p>
          </div>
          <div class="col">
-            <div class="card shadow-sm border-0">
+            <div class="card card-form shadow-lg border-light text-center mt-4">
+               <div class="card-header">
+                  Enter Details For your free Twitter Social Risk Report.
+               </div>
                <div class="card-body">
-                  form goes here
-
+                  <form action="">
+                     <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text">@</div>
+                           </div>
+                           <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Twitter Username">
+                        </div>
+                     </div>
+                     <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                        <div class="input-group mb-2">
+                           <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email Address">
+                        </div>
+                     </div>
+                  </form>
+                  <a href="#" class="btn btn-primary">Sign Up</a>
                </div>
             </div>
          </div>
@@ -91,8 +107,6 @@
                               <li>Racist slurs</li>
                               <li>Attacks</li>
                            </ul>
-                   
-                        <a href="" class="btn btn-outline-primary mt-3">Tell Me More</a>
                      </div>
                   </div>
                   <div class="media col pt-4">
@@ -100,9 +114,8 @@
                      <div class=" media-body">
                         <h4 class="">Retweets and Replies</h4>
                         <p class="card-text">SafeSocial looks at everything on your Twitter account, including other peoples’ posts that you’ve retweeted or replied
-                        to
+                        to.
                         </p>
-                        <a href="" class="btn btn-outline-primary mt-3">learn more</a>
                      </div>
                   </div>
                   <div class="media col pt-4">
@@ -110,7 +123,6 @@
                      <div class=" media-body">
                         <h4 class="">Images</h4>
                         <p class="card-text">An image you post, like or retweet may give people an impression of you that could hurt you professionally.</p>
-                        <a href="" class="btn btn-outline-primary mt-3">learn more</a>
                      </div>
                   </div>
                </div>
@@ -125,7 +137,7 @@
          <section class="section-sub p-4 row">
             <div class="container">
                <div class="row">
-                  <div class="col-6">
+                  <div class="col-6 section-sub-text">
                      <h3 class="pt-4">Kiss your Mom with that mouth?</h3>
                      <p>Is there a past conversation on Twitter that you wish you could take back? Use the
                      power of AI to sift through your tweets and flag your posts before your mom washes your mouth out with soap.</p>
@@ -144,15 +156,18 @@
                </div>
             </div>
          </section>
-         <section class="home-cta my-4">
+         <section class="home-cta row">
+            <div class="container-fluid">
             <h2 class="text-center">
                Sign Up
             </h2>
+            <p class="text-center">Enter your twitter handle and email and we’ll analyze your Twitter account with our AI and send you a free sample risk
+            report.</p>
             <div class="row">
                <div class="container">
                <div class="card card-form shadow-lg border-light text-center mt-4">
                   <div class="card-header">
-                     Form goes here
+                     Enter Details For your free Twitter Social Risk Report.
                   </div>
                   <div class="card-body">
                      <form action="">
@@ -165,6 +180,12 @@
                               <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
                            </div>
                         </div>
+                        <div class="col-auto">
+                           <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                           <div class="input-group mb-2">
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email Address">
+                           </div>
+                        </div>
                      </form>
                      <a href="#" class="btn btn-primary">Sign Up</a>
                   </div>
@@ -172,23 +193,52 @@
                </div>
                </div>
             </div>
+            </div>
          </section>
       </main>
    </div>
 </div>
-<footer>
+<footer class="footer pt-5">
    <div class="container">
       <div class="row">
-         <div class="col">
+
+
+         <div class="col mb-3">
             <h3>Connect</h3>
+            <p class="footer-contact">
+               <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@email.com">info@email.com</a>
+            </p>
+            <p class="footer-contact"> <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:12333333">+ 1
+                  (555) 555-5555</a>
+            </p>
+            <ul class="list-unstyled list-inline">
+               <li class="list-inline-item"><a href="" target="_blank"><i
+                        class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+               <li class="list-inline-item"><a href="" target="_blank"><i
+                        class="fab fa-facebook" aria-hidden="true"></i></a></li>
+               <li class="list-inline-item"><a href="" target="_blank"><i
+                        class="fab fa-youtube" aria-hidden="true"></i></a></li>
+               <li class="list-inline-item"><a href="" target="_blank"><i
+                        class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
          </div>
-         <div class="col">
-            <h3>About Us</h3>
+         <div class="col mb-3">
+            <h3>
+               About Us
+            </h3>
+            <p>SafeSocial is here to protect you on social media.</p>
+            <p><small><a href="">Privacy Policy</a> | <a href="">Terms of Service</a></small></p>
          </div>
+
       </div>
-      <div class="row text-center">
-         <small>copyright</small>
+
+
+   </div>
+   <div class="footer-bottom">
+      <div class="container text-center pt-2 pb-2">
+         <small>&copy; 2019 SocialMetrics</small>
       </div>
+
    </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
