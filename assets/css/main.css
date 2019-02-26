@@ -78,7 +78,7 @@ h2 span {
    color: #fff;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1200px) {
    .section-sub-text {
       margin-top: 8rem;
    }
