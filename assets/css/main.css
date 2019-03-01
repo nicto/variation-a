@@ -85,7 +85,7 @@ h2 span {
 }
 
 .section-sub .mockup img {
-   padding: 1rem 5rem 5rem;
+   /* padding: 1rem 5rem 5rem; */
    max-width: 100%;
 }
 .home-cta {
@@ -148,3 +148,70 @@ footer a:hover {
 .footer-bottom {
    background: #333;
 }
+
+
+.iphone {
+	width: 345px;
+	height: 720px;
+	background-color: #222;
+	border-radius: 25px;
+	position: relative;
+	margin: auto;
+	box-shadow: 3px 0px 0px #444;
+	}
+	.frontcam {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+		background-color: #444;
+		top: 27px;
+		left: 105px;
+}
+	.speaker {
+		position: absolute;
+		width: 80px;
+		height: 5px;
+		border-radius: 10px;
+		background-color: #222;
+		border: 1px solid #444;
+		top: 34px;
+		left: 135px;
+}
+	.screen {
+		box-sizing: border-box;
+		width: 320px;
+		height: 570px;
+		position: relative;
+		left: 12.5px;
+		top: 75px;
+      overflow: hidden;
+		background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/153207/PhoneScreenUser.png');
+		background-size: cover;
+		background-postiion: top center;
+	}
+	.screenContent {
+		width: 100%;
+		height: 466px;
+		position: relative;
+		top: 65px;
+		overflow: hidden;
+}
+		iframe {
+			width: 100%;
+			height: 463px !important;
+			background-color: transparent;
+			border: 0px none transparent;
+			padding: 0px;
+			overflow: hidden;
+}
+	.homeBtn {
+		width: 50px;
+		height: 50px;
+		background-color: #222;
+		border: 2px solid #444;
+		position: absolute;
+		border-radius: 100%;
+		left: 145px;
+		bottom: 10px;
+   }
